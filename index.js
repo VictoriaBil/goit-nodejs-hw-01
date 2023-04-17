@@ -11,8 +11,6 @@ program
 program.parse();
 
 const options = program.opts();
-// const yargs = require("yargs");
-// const { hideBin } = require("yargs/helpers");
 
 const contacts = require("./contacts");
 
@@ -36,7 +34,3 @@ const invokeAction = async ({ action, id, name, email, phone }) => {
 };
 
 invokeAction(options);
-
-// const arr = hideBin(process.argv);
-// const { argv } = yargs(arr);
-// invokeAction(argv);
